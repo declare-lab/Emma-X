@@ -1,4 +1,4 @@
-# setup and download datasets
+# Setup and download datasets
 1. download the rlds of bridgeV2 dataset following [openvla](https://github.com/openvla/openvla)
 ```bash
 # Change directory to your base datasets folder
@@ -18,7 +18,7 @@ download [link](https://huggingface.co/datasets/Embodied-CoT/embodied_features_b
 ## Run dataset creation
 
 1. get gripper position in 2d image trajectories by `python gripper_position.py`
-2. get high level plan by `python generate_plans.py`
+2. get high-level plan by `python generate_plans.py`
 3. run dataset by `python create_dataset.py`
 
 

@@ -125,8 +125,8 @@ To run the real robot testing, execute the following command:
 python experiments/robot/bridge/run_bridge_eval.py
 ```
 
-## Generate GCOT Dataset
-To generate the GCOT dataset for other datasets, please check [GCOT](./GCOT/README.md)
+## Generate Grounded CoT Dataset
+To generate the Grounded CoT dataset for other datasets, please check [Grounded CoT](./GCOT/README.md)
 
 ## Acknowledgements
 This codebase is built on top of the [OpenVLA](https://github.com/openvla/openvla/) framework

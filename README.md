@@ -3,7 +3,10 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2406.09246-df2a2a.svg?style=for-the-badge)](https://arxiv.org/abs/)
 [![HF Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow?style=for-the-badge)](https://huggingface.co/declare-lab/Emma-X)
 
+[](asset/emma-x.pdf)
+
 ## Getting Started
+
 ```python
 # Install minimal dependencies (`torch`, `transformers`, `timm`, `tokenizers`, ...)
 # > pip install -r https://raw.githubusercontent.com/openvla/openvla/main/requirements-min.txt
@@ -114,6 +117,9 @@ To run the real robot testing, execute the following command:
 ```python
 python experiments/robot/bridge/run_bridge_eval.py
 ```
+
+## Generate GCOT Dataset
+To generate the GCOT dataset for other datasets, please check [GCOT](./GCOT/README.md)
 
 ## Acknowledgements
 This codebase is built on top of the [OpenVLA](https://github.com/openvla/openvla/) framework

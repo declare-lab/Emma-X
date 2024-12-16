@@ -132,4 +132,11 @@ To generate the Grounded CoT dataset for other datasets, please check [Grounded 
 This codebase is built on top of the [OpenVLA](https://github.com/openvla/openvla/) framework
 
 ## Citation
-TODO
+```
+@article{sun2024emma,
+  title={Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning},
+  author={Sun, Qi and Hong, Pengfei and Pala, Tej Deep and Toh, Vernon and Tan, U-Xuan and Ghosal, Deepanway and Poria, Soujanya},
+  journal={arXiv preprint arXiv:2024.12xx},
+  year={2024}
+}
+```

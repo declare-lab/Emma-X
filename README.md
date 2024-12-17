@@ -136,7 +136,7 @@ This codebase is built on top of the [OpenVLA](https://github.com/openvla/openvl
 @article{sun2024emma,
   title={Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning},
   author={Sun, Qi and Hong, Pengfei and Pala, Tej Deep and Toh, Vernon and Tan, U-Xuan and Ghosal, Deepanway and Poria, Soujanya},
-  journal={arXiv preprint arXiv:2024.12xx},
+  journal={arXiv preprint arXiv:2412.11974},
   year={2024}
 }
 ```

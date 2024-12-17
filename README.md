@@ -1,7 +1,14 @@
-# An <span style="color:red">E</span>mbodied <span style="color:blue">M</span>ulti<span style="color:forestgreen">m</span>odal <span style="color:orange">A</span>ction <span style="color:purple">Model</span> with Grounded Chain of Thought and Look-ahead Spatial Reasoning
+# Emma-X: An <span style="color:red">E</span>mbodied <span style="color:blue">M</span>ulti<span style="color:forestgreen">m</span>odal <span style="color:orange">A</span>ction <span style="color:purple">Model</span> with Grounded Chain of Thought and Look-ahead Spatial Reasoning
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.09246-df2a2a.svg?style=for-the-badge)](https://arxiv.org/abs/)
-[![HF Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow?style=for-the-badge)](https://huggingface.co/declare-lab/Emma-X)
+<div align="center">
+  <img src="Emma-X.png" alt="Emma-X" width="300" />
+
+<br/>
+
+| [![arXiv](https://img.shields.io/badge/arXiv-2412.11974-df2a2a.svg?style=for-the-badge)](https://arxiv.org/abs/2412.11974) | [![HF Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow?style=for-the-badge)](https://huggingface.co/declare-lab/Emma-X) |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+
+</div>
 
 ![cover-photo](asset/emma-x.png)
 
@@ -118,11 +125,18 @@ To run the real robot testing, execute the following command:
 python experiments/robot/bridge/run_bridge_eval.py
 ```
 
-## Generate GCOT Dataset
-To generate the GCOT dataset for other datasets, please check [GCOT](./GCOT/README.md)
+## Generate Grounded CoT Dataset
+To generate the Grounded CoT dataset for other datasets, please check [Grounded CoT](./GCOT/README.md)
 
 ## Acknowledgements
 This codebase is built on top of the [OpenVLA](https://github.com/openvla/openvla/) framework
 
 ## Citation
-TODO
+```
+@article{sun2024emma,
+  title={Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning},
+  author={Sun, Qi and Hong, Pengfei and Pala, Tej Deep and Toh, Vernon and Tan, U-Xuan and Ghosal, Deepanway and Poria, Soujanya},
+  journal={arXiv preprint arXiv:2024.12xx},
+  year={2024}
+}
+```

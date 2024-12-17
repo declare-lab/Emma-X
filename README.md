@@ -5,7 +5,7 @@
 
 <br/>
 
-| [![arXiv](https://img.shields.io/badge/arXiv-2412.09246-df2a2a.svg?style=for-the-badge)](https://arxiv.org/abs/) | [![HF Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow?style=for-the-badge)](https://huggingface.co/declare-lab/Emma-X) |
+| [![arXiv](https://img.shields.io/badge/arXiv-2412.11974-df2a2a.svg?style=for-the-badge)](https://arxiv.org/abs/2412.11974) | [![HF Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow?style=for-the-badge)](https://huggingface.co/declare-lab/Emma-X) |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 
 </div>

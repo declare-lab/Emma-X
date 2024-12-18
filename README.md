@@ -1,4 +1,11 @@
-<h1 align="center">✨ Meet Emma-X, an Embodied Multimodal Action Model ✨</h1>
+<h1 align="center">✨ 
+<br/>  
+Meet Emma-X, an Embodied Multimodal Action Model 
+<br/>
+✨✨✨
+
+
+</h1>
 
 <div align="center">
   <img src="Emma-X.png" alt="Emma-X" width="300" />

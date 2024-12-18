@@ -1,4 +1,4 @@
-# Emma-X: An <span style="color:red">E</span>mbodied <span style="color:blue">M</span>ulti<span style="color:forestgreen">m</span>odal <span style="color:orange">A</span>ction <span style="color:purple">Model</span> with Grounded Chain of Thought and Look-ahead Spatial Reasoning
+<h1 align="center">✨ Meet Emma-X, an Embodied Multimodal Action Model ✨</h1>
 
 <div align="center">
   <img src="Emma-X.png" alt="Emma-X" width="300" />

@@ -17,7 +17,7 @@ Meet Emma-X, an Embodied Multimodal Action Model
 
 </div>
 
-![cover-photo](asset/emma-x.png)
+![cover-photo](docs/asset/emma-x.png)
 
 ## Getting Started
 

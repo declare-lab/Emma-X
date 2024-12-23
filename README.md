@@ -12,8 +12,8 @@ Meet Emma-X, an Embodied Multimodal Action Model
 
 <br/>
 
-[![arXiv](https://img.shields.io/badge/arxiv-2412.11974-b31b1b)](https://arxiv.org/abs/2412.11974)
-[![HF Models](https://img.shields.io/badge/https%3A%2F%2Fhuggingface.co%2Fdeclare-lab%2FEmma-X)](https://huggingface.co/declare-lab/Emma-X)
+[![arXiv](https://img.shields.io/badge/arxiv-2412.11974-b31b1b)](https://arxiv.org/abs/2412.11974) [![Emma-X](https://img.shields.io/badge/Huggingface-Emma--X-brightgreen?style=flat&logo=huggingface&color=violet)](https://huggingface.co/declare-lab/Emma-X) [![Static Badge](https://img.shields.io/badge/Demos-declare--lab-brightred?style=flat)](https://declare-lab.github.io/Emma-X/)
+
 
 </div>
 

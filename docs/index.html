@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Emma-X</title>
+  <meta name="description" content="An Embodied MultiModal action model with Grounded Chain of Thought and Look-ahead Spatial Reasoning">
+  <meta name="keywords" content="GCoT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Emma-X">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Emma-X">
+  <meta property="og:image" content="https://raw.githubusercontent.com/declare-lab/Emma-X/main/Emma-X.png" />
+  <!-- todo -->
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:url" content="https://declare-lab.github.io/Emma-X/" />
+  <meta property="og:description" content="Project page for Emma-X" />
+  <meta name="twitter:title" content="Emma-X" />
+  <meta name="twitter:description" content="An Embodied MultiModal action model with Grounded Chain of Thought and Look-ahead Spatial Reasoning" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/declare-lab/Emma-X/main/docs/asset/emma-x.png" />
+
+
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NR2FNZG3');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/vlmaps_icon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR2FNZG3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-1 publication-title">
+              <span style="font-variant: small-caps; font-weight: bold; font-size: 1.5em;">
+                <span style="color: red;">E</span><span style="color: blue;">m</span><span style="color: forestgreen;">m</span><span style="color: orange;">a</span>-<span style="color: purple;">X</span>
+              </span>
+              : An <span style="color: red;">E</span>mbodied 
+              <span style="color: blue;">M</span>ulti<span style="color: forestgreen;">m</span>odal 
+              <span style="color: orange;">A</span>ction 
+              <span style="color: purple;">Model</span> with<br>
+              Grounded Chain of Thought and Look-ahead Spatial Reasoning
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com.hk/citations?user=GpH4vXwAAAAJ&hl=zh-CN
+                ">Sun Qi</a>*<sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Evuk6ewAAAAJ&hl=en">Hong Pengfei</a>*<sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">Tej Deep Pala</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">Vernon Y.H. Toh</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="">U-Xuan Tan</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="">Deepanway Ghosal</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="">Soujanya Poria</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>
+                Singapore University of Technology and Design
+              </span>
+            </div>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">*Equal contribution
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block"> <!-- TODO -->
+                  <a href="https://www.arxiv.org/pdf/2412.11974.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/declare-lab/Emma-X"
+                    class="external-link button is-normal is-rounded is-dark"> <!-- TODO -->
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Model Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/declare-lab/Emma-X"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="https://raw.githubusercontent.com/declare-lab/Emma-X/main/docs/asset/hf-logo.svg" />
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Overview of the Approach</h2>
+          <div class="content has-text-justified has-text-centered">
+
+            <img src="https://raw.githubusercontent.com/declare-lab/Emma-X/main/docs/asset/cover.png" />
+            <p style="text-align: center;"><small>Figure illustrates the our hierarchical planning framework</small></p>
+
+            <p>
+              We introduce Emma-X, a 7B-parameter embodied multimodal action model created by fine-tuning OpenVLA with grounded chain-of-thought (CoT) reasoning data. To support this, we synthetically construct a hierarchical embodiment dataset from existing robot manipulation datasets, incorporating 3D spatial movements, 2D gripper positions, and grounded reasoning. Additionally, we propose a novel trajectory segmentation strategy that utilizes the gripper’s opening and closing states alongside the robot arm’s motion trajectory, enabling grounded task reasoning and look-ahead spatial reasoning.
+            </p>
+
+            <p>
+              Our GCoT policy is built atop <a href="https://openvla.github.io/">OpenVLA</a>, which fine-tunes a <a
+                href="https://github.com/TRI-ML/prismatic-vlms">Prismatic VLMs</a> to take in images
+              and instructions to output actions.
+            </p>
+            <h3 class="title is-4">Data Generation pipeline</h3>
+
+            <img src="https://raw.githubusercontent.com/declare-lab/Emma-X/main/docs/asset/figure2.png" />
+            <p style="text-align: center;"><small>Figure illustrates the construction of our Hierarchical Embodied dataset</small></p>
+            <p>
+              We develop a hierarchical embodiment dataset based on BridgeV2, consisting of 60,000 robot manipulation trajectories. 
+              For each state of a given trajectory, we generate detailed spatial reasoning grounded in the environment and task reasoning, such as the plans of how the robot should perform the subtask. 
+              We also generate the 2D gripper position, and 3D spatial movements of the gripper to transit to future states, which enable the VLA model to reason a long-horizon plan for accomplishing the task.
+              Furthermore, we utilize Gemini to generate grounded task reasoning for each observed state. To avoid the abovementioned reasoning conflict problem of task reasoning in ECoT, we propose a novel trajectory segmentation strategy, which leverages the opening and closing states of the gripper and the motion trajectory of the robot arm to segment the sequence of states into distinct segments.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container is-max-desktop">
+
+          <div class="columns is-centered">
+
+
+            <!-- Animation. -->
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <h2 class="title is-3">Experiments</h2>
+
+                <!-- Interpolating. -->
+
+                <div class="content has-text-justified">
+
+                  <p>
+                    We construct a suite of 12 evaluation tasks to test how well Emma-X deals with
+                    novel objects,
+                    instructions, and spatial relations. We
+                    compare our policy against several baselines: <a
+                      href="https://openvla.github.io/">OpenVLA</a>, and <a
+                      href="https://deepmind.google/discover/blog/scaling-up-learning-across-many-different-robot-types/">ECOT</a>.
+                  </p>
+
+                  <img src="https://raw.githubusercontent.com/declare-lab/Emma-X/main/docs/asset/performance.png" />
+                  <p style="text-align: center;"><small>Evaluation success rates of our ECoT policy compared against
+                      several popular generalist robot policies.</small></p>
+                  <p>
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <h4 class="title is-6">Real-World WidowX Robot Rollouts: Fine-Tuning on GCOT</h4>
+          <div class="content has-text-justified">
+            <p> After running <b>over 120 real-world evaluation trials per policy</b>, we find that Emma-X achieves significant performance improvements over competitive baselines in various real-world robot tasks, particularly those requiring spatial reasoning, and OOD tasks</p>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>OpenVLA Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/openvla_t7_r3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>ECOT Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/ecot_t7_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>Emma-X Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/emmax_t7_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>OpenVLA out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
+              <h5 style="font-size:30px;">❌</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/openvla_t3_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>ECOT out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
+              <h5 style="font-size:30px;">⚠️</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/ecot_t3_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>Emma-X out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/emmax_t3_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <br>
+
+          <div class="content has-text-justified">
+            <p>It achieves comparable performance to OpenVLA on both in-domain and out-of-domain object tasks.</p>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>OpenVLA:</b><br>Put the blue cube on the plate</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/openvla_t6_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>ECOT:</b><br>Put the blue cube on the plate</h5>
+              <h5 style="font-size:30px;">⚠️</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/ecot_t6_r2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>Emma-X:</b><br>Put the blue cube on the plate</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/emmax_t6_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column  has-text-centered">
+              <h5><b>OpenVLA:</b><br>Open microwave</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/openvla_t12_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>ECOT:</b><br>Open microwave</h5>
+              <h5 style="font-size:30px;">⚠️</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/ecot_t12_r1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column  has-text-centered">
+              <h5><b>Emma-X:</b><br>Open microwave</h5>
+              <h5 style="font-size:30px;">✅</h5>
+              <video autoplay controls muted loop playsinline width="80%">
+                <source src="asset/emmax_t12_r2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <br>
+
+
+
+
+
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code> @article{sun2024emma,
+  title={Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning},
+  author={Sun, Qi and Hong, Pengfei and Pala, Tej Deep and Toh, Vernon and Tan, U and Ghosal, Deepanway and Poria, Soujanya and others},
+  journal={arXiv preprint arXiv:2412.11974},
+  year={2024}
+} </code></pre>
+        </div>
+      </section>
+
+
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <a class="icon-link" href="https://www.arxiv.org/pdf/2412.11974.pdf">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="" class="external-link" disabled>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p> Website borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> under a <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+                    International</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>

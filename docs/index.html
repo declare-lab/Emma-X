@@ -329,9 +329,25 @@
             </div>
           </div>
           <br>
+
           <script>
             const video = document.getElementById('myVideo');
-            video.playbackRate = 0.3;
+            video.playbackRate = 0.8;
+            const pauseDelay = 5000;
+
+            video.addEventListener('ended', () => {
+              video.pause();
+              setTimeout(() => {
+                video.currentTime = 0;
+                video.play();
+              }, pauseDelay);
+            });
+
+            // Ensure the video plays continuously by looping programmatically
+            video.loop = false; // Disable the native loop to manage it manually
+          </script>
+          <script>
+            const video = document.getElementById('myVideo');
           </script>
 
 

@@ -331,22 +331,24 @@
           <br>
 
           <script>
-            const video = document.getElementById('myVideo');
-            video.playbackRate = 0.8;
-            const pauseDelay = 5000;
+            document.addEventListener('DOMContentLoaded', () => {
+              const videos = document.querySelectorAll('.myVideo');
+              const pauseDelay = 1000;
 
-            video.addEventListener('ended', () => {
-              video.pause();
-              setTimeout(() => {
-                video.currentTime = 0;
-                video.play();
-              }, pauseDelay);
+              videos.forEach((video) => {
+                video.playbackRate = 0.8;
+                video.loop = false;
+
+                video.addEventListener('ended', () => {
+                  video.pause();
+                  setTimeout(() => {
+                    video.currentTime = 0;
+                    video.play();
+                  }, pauseDelay);
+                });
+              });
             });
-
-            // Ensure the video plays continuously by looping programmatically
-            video.loop = false; // Disable the native loop to manage it manually
           </script>
-
 
 
 

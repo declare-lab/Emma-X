@@ -235,21 +235,21 @@
             <div class="column  has-text-centered">
               <h5><b>OpenVLA Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
               <h5 style="font-size:30px;">❌</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/openvla_t7_r3.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>ECOT Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
               <h5 style="font-size:30px;">❌</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/ecot_t7_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>Emma-X Spatial Reasoning:</b><br>Put the blue cube on the left plate</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/emmax_t7_r1.mp4" type="video/mp4">
               </video>
             </div>
@@ -258,21 +258,21 @@
             <div class="column  has-text-centered">
               <h5><b>OpenVLA out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
               <h5 style="font-size:30px;">❌</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/openvla_t3_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>ECOT out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
               <h5 style="font-size:30px;">⚠️</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/ecot_t3_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>Emma-X out-of-domain tasks:</b><br>pick up any object that is kind of vegetable</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/emmax_t3_r1.mp4" type="video/mp4">
               </video>
             </div>
@@ -286,21 +286,21 @@
             <div class="column  has-text-centered">
               <h5><b>OpenVLA:</b><br>Put the blue cube on the plate</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/openvla_t6_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>ECOT:</b><br>Put the blue cube on the plate</h5>
               <h5 style="font-size:30px;">⚠️</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/ecot_t6_r2.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>Emma-X:</b><br>Put the blue cube on the plate</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/emmax_t6_r1.mp4" type="video/mp4">
               </video>
             </div>
@@ -309,26 +309,30 @@
             <div class="column  has-text-centered">
               <h5><b>OpenVLA:</b><br>Open microwave</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/openvla_t12_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>ECOT:</b><br>Open microwave</h5>
               <h5 style="font-size:30px;">⚠️</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/ecot_t12_r1.mp4" type="video/mp4">
               </video>
             </div>
             <div class="column  has-text-centered">
               <h5><b>Emma-X:</b><br>Open microwave</h5>
               <h5 style="font-size:30px;">✅</h5>
-              <video autoplay controls muted loop playsinline width="80%">
+              <video id="myVideo" autoplay controls muted loop playsinline width="80%">
                 <source src="asset/emmax_t12_r2.mp4" type="video/mp4">
               </video>
             </div>
           </div>
           <br>
+          <script>
+            const video = document.getElementById('myVideo');
+            video.playbackRate = 0.5;
+          </script>
 
 
 

@@ -37,18 +37,16 @@ vla = AutoModelForVision2Seq.from_pretrained(
     low_cpu_mem_usage=True, 
     trust_remote_code=True
 ).to("cuda:0")
+processor = AutoProcessor.from_pretrained("declare-lab/Emma-X", trust_remote_code=True)
 
-# Grab image input & format prompt of size 224x224
 image: Image.Image = get_from_camera(...)
 prompt = "In: What action should the robot take to achieve the instruction\nINSTRUCTION: \n{<Instruction here>}\n\nOut: "
 
 # Predict Action (action is a 7 dimensional vector to control the robot)
-action, grounded_reasoning = vla.generate_actions(
-    image=image, prompt_text=prompt, type="act", do_sample=False,
-    max_new_tokens=512, do_sample=False
-)
+inputs = processor(prompt, image).to("cuda:0", dtype=torch.bfloat16)
+action, _ = vla.generate_actions(inputs, do_sample=False, max_new_tokens=512)
 
-print("Grounded Reasoning:", grounded_reasoning)
+print("action", action)
 # Execute...
 robot.act(action, ...)
 ```

@@ -1,9 +1,6 @@
-<h1 align="center">✨ 
-<br/>  
+<h1 align="center"> 
 Meet Emma-X, an Embodied Multimodal Action Model 
 <br/>
-✨✨✨
-
 
 </h1>
 

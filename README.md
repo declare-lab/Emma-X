@@ -39,7 +39,7 @@ vla = AutoModelForVision2Seq.from_pretrained(
 ).to("cuda:0")
 processor = AutoProcessor.from_pretrained("declare-lab/Emma-X", trust_remote_code=True)
 
-prompt = processor.get_prompt(task_label, image) # Add corresponding prompt template
+prompt, image = processor.get_prompt(task_label, image)
 inputs = processor(prompt, image).to("cuda:0", dtype=torch.bfloat16)
 # Predict Action (action is a 7 dimensional vector to control the robot)
 action, reasoning = vla.generate_actions(inputs, processor.tokenizer, do_sample=False, max_new_tokens=512)

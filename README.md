@@ -26,6 +26,9 @@ from PIL import Image
 
 import torch
 
+task_label = "put carrot in pot" # Change your desired task label
+image: Image.Image = get_from_camera(...)
+
 # Load Emma-X
 vla = AutoModelForVision2Seq.from_pretrained(
     "declare-lab/Emma-X",
@@ -36,14 +39,12 @@ vla = AutoModelForVision2Seq.from_pretrained(
 ).to("cuda:0")
 processor = AutoProcessor.from_pretrained("declare-lab/Emma-X", trust_remote_code=True)
 
-image: Image.Image = get_from_camera(...)
-prompt = "In: What action should the robot take to achieve the instruction\nINSTRUCTION: \n{<Instruction here>}\n\nOut: "
-
-# Predict Action (action is a 7 dimensional vector to control the robot)
+prompt = processor.get_prompt(task_label, image) # Add corresponding prompt template
 inputs = processor(prompt, image).to("cuda:0", dtype=torch.bfloat16)
-action, _ = vla.generate_actions(inputs, do_sample=False, max_new_tokens=512)
-
+# Predict Action (action is a 7 dimensional vector to control the robot)
+action, reasoning = vla.generate_actions(inputs, processor.tokenizer, do_sample=False, max_new_tokens=512)
 print("action", action)
+
 # Execute...
 robot.act(action, ...)
 ```

@@ -1,8 +1,10 @@
 <h1 align="center"> 
 Meet Emma-X, an Embodied Multimodal Action Model 
 <br/>
-
 </h1>
+
+🔥 We introduced NORA, a new Vision Language Action model with SOTA performance. Access it here: https://github.com/declare-lab/nora
+
 
 <div align="center">
   <img src="Emma-X.png" alt="Emma-X" width="300" />

@@ -4,7 +4,7 @@ Meet Emma-X, an Embodied Multimodal Action Model
 </h1>
 
 🔥 We introduced NORA, a new Vision Language Action model with SOTA performance. Access it here: https://github.com/declare-lab/nora
-
+🔥 Emma-X has been accepted to ACL (main).
 
 <div align="center">
   <img src="Emma-X.png" alt="Emma-X" width="300" />
